@@ -1,5 +1,11 @@
 const Card = () => {
-  return <div>Card</div>;
+  return (
+    <div>
+      <h3>Name</h3>
+      <img src="" alt="" />
+      <p>Email</p>
+    </div>
+  );
 };
 
 export default Card;
