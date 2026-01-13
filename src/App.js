@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import UserDetail from "./pages/UserDetail";
+import UserDetail, { loader as getUserDetail } from "./pages/UserDetail";
 import AppLayout from "./pages/AppLayout";
 import Error from "./components/Error";
 import { getAllUser } from "./services/apiUsers";
@@ -23,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/user/:id",
         element: <UserDetail />,
+        loader: getUserDetail,
       },
     ],
   },

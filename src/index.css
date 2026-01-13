@@ -49,6 +49,7 @@ body {
   border-radius: 10px;
   background: gray;
   color: aliceblue;
+  cursor: pointer;
 }
 
 .usersWrapper {

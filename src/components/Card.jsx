@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 const Card = ({ user }) => {
-  const { name, email, username } = user;
+  const navigate = useNavigate();
+  const { id, name, email, username } = user;
+
   return (
-    <div className="cardWrapper">
+    <div onClick={() => navigate(`/user/${id}`)} className="cardWrapper">
       <h3>Name: {name}</h3>
       <p>Username: {username}</p>
       <p>Email: {email}</p>
