@@ -39,3 +39,21 @@ body {
   padding: 32px;
   margin: 32px 0;
 }
+
+.cardWrapper {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: gray;
+  color: aliceblue;
+}
+
+.usersWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 32px;
+}

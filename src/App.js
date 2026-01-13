@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import UserDetail from "./pages/UserDetail";
 import AppLayout from "./pages/AppLayout";
+import { getAllUser } from "./services/apiUsers";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       {
         path: "/user",
         element: <User />,
+        loader: getAllUser,
       },
       {
         path: "/user/:id",

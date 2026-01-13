@@ -1,9 +1,10 @@
-const Card = () => {
+const Card = ({ user }) => {
+  const { name, email, username } = user;
   return (
-    <div>
-      <h3>Name</h3>
-      <img src="" alt="" />
-      <p>Email</p>
+    <div className="cardWrapper">
+      <h3>Name: {name}</h3>
+      <p>Username: {username}</p>
+      <p>Email: {email}</p>
     </div>
   );
 };
