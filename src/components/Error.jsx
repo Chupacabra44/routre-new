@@ -1,9 +1,17 @@
+import { useNavigate, useRouteError } from "react-router-dom";
 import imgError from "../images/404.jpeg";
 
 const Error = () => {
+  const navigate = useNavigate();
+  const error = useRouteError();
+  console.log(error);
   return (
-    <div>
-      <img src={imgError} alt="404 error" />
+    <div className="errorWrapper">
+      <img className="error" src={imgError} alt="404 error" />
+      <p>{error.data || error.message}</p>
+      <div>
+        <button onClick={() => navigate(-1)}>&larr; Back</button>
+      </div>
     </div>
   );
 };

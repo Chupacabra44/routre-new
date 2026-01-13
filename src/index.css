@@ -57,3 +57,15 @@ body {
   margin-top: 16px;
   gap: 32px;
 }
+
+.errorWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  width: 100%;
+}
